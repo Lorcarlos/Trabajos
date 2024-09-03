@@ -3,7 +3,7 @@
 # Registro
 ![Regritro](imagenes/Imagene2.jpeg)
 # Gracias por registrarte
-
+![Gracias](imagenes/gracias.jpeg)
 # Login
 ![login](imagenes/login.jpeg)
 # inicio
