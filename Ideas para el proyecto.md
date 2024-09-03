@@ -7,10 +7,6 @@ Descripción: Una app que utilice el sensor de pasos del dispositivo para contar
 3) Agrega un objetivo diario que los usuarios puedan cumplir.
 
 
-# 2 App de Lectura de QR/Códigos de Barras
-
-Descripción: Una app que permita a los usuarios escanear códigos QR o códigos de barras y ver la información asociada.
-Características:
-1) Implementar una cámara para escanear el código.
-2) Mostrar el contenido del código escaneado (texto, URL, etc.).
-3) Guardar un historial de los códigos escaneados.
+ b) Diseño de interfaz de usuario
+    1-encabezado : Se le dara la bienvenida a el cliente con una frace motivacional 
+    2-
