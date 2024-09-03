@@ -6,7 +6,7 @@
 ![Gracias](imagenes/gracias.jpeg)
 # Login
 ![login](imagenes/login.jpeg)
-# inicio
+# pantalla principal
 ![inicio](imagenes/iniciodeap.jpeg)
 # Distancia
 ![distancia](imagenes/distancia.jpeg)
