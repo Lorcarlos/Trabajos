@@ -6,4 +6,10 @@ Es una aplicación que utiliza el sensor de pasos incorporado en el dispositivo 
 2) Muestra los pasos diarios, semanales y mensuales.
 
 
+# Referencia
+1) https://play.google.com/store/apps/details?id=pedometer.steptracker.calorieburner.stepcounter&hl=es_CO&pli=1
+2) https://play.google.com/store/apps/details?id=com.tayu.tau.pedometer&hl=es_CO
+3) https://www.samsung.com/co/apps/samsung-health/
+   
+
 
