@@ -7,27 +7,44 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Context
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
+import android.os.PersistableBundle
+import android.view.LayoutInflater
+import android.view.inputmethod.InputBinding
 
-class registro : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_registro)
+        setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val botton_registrarse2 = findViewById<Button>(R.id.button2)
-        botton_registrarse2.setOnClickListener {
-            val intent = Intent(this, registro2::class.java)
+        val button_iniciar_sesion = findViewById<Button>(R.id.button1)
+        button_iniciar_sesion.setOnClickListener {
+            val intent = Intent(this, login::class.java)
             startActivity(intent)
         }
-        val botton_registrarse4 = findViewById<Button>(R.id.button6)
-        botton_registrarse4.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        val botton_registrarse = findViewById<Button>(R.id.button2)
+        botton_registrarse.setOnClickListener {
+            val intent = Intent(this, registro::class.java)
             startActivity(intent)
         }
 
+
     }
+
+
+
+
+
 }
