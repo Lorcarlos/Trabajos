@@ -20,7 +20,7 @@ class principal : AppCompatActivity() {
         }
         val button_iniciar_sesion = findViewById<Button>(R.id.button5)
         button_iniciar_sesion.setOnClickListener {
-            val intent = Intent(this, login::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
         val botton_registrarse = findViewById<Button>(R.id.button4)
@@ -30,7 +30,7 @@ class principal : AppCompatActivity() {
         }
         val botton_salir = findViewById<Button>(R.id.button3)
         botton_salir.setOnClickListener {
-            val intent = Intent(this, login::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

@@ -166,6 +166,8 @@
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.38" />
 
+
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -204,21 +206,7 @@
         app:layout_constraintVertical_bias="0.753"
         app:srcCompat="@drawable/pngwing_com__19_" />
 
-    <TextView
-        android:id="@+id/stepCountTextView"
-        android:layout_width="109dp"
-        android:layout_height="33dp"
-        android:layout_gravity="center"
-        android:text="Pasos: 0"
-        android:textColor="#D95B5B"
 
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
 
     <Button
         android:id="@+id/button5"

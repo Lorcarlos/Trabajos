@@ -1,6 +1,7 @@
 package com.example.correr
 import android.content.Intent
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -65,6 +66,9 @@ class registro : AppCompatActivity() {
                     }
                     viewModel.limpiarMensaje() // Limpiar el mensaje después de mostrarlo
                 }
+
+                // Ocultar el teclado después de registrar
+                hideKeyboard()
             }
         }
 
@@ -73,6 +77,15 @@ class registro : AppCompatActivity() {
         botonSalir.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    // Función para ocultar el teclado
+    private fun hideKeyboard() {
+        val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+        val currentFocusView = currentFocus
+        if (currentFocusView != null) {
+            inputMethodManager.hideSoftInputFromWindow(currentFocusView.windowToken, 0)
         }
     }
 }

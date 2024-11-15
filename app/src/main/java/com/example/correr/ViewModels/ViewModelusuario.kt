@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.asLiveData
 import com.example.correr.dao.Registro_Dao
 import com.example.correr.dao.Registro_usuario_entity
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
 class ViewModelusuario(private val dao: Registro_Dao) : ViewModel() {
@@ -19,6 +20,10 @@ class ViewModelusuario(private val dao: Registro_Dao) : ViewModel() {
     val mensaje: LiveData<String> get() = _mensaje
 
     // Función para insertar un usuario en la base de datos
+    fun getRegistroByCorreo(correo: String): Flow<Registro_usuario_entity?> {
+        return dao.getRegistroByCorreo(correo)
+    }
+
     fun insertarUsuario(usuario: Registro_usuario_entity) {
         viewModelScope.launch {
             try {
